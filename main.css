@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.topo {
+  padding: 32px 16px;
+  background-color: #212a3e;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Calibri, sans-serif;
+  text-transform: uppercase;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+li a {
+  color: whitesmoke;
+  font-weight: 800;
+}
+
+section a {
+  background-color: #212a3e;
+  color: #ebe3d5;
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.sports {
+  background-color: #f3eeea;
+}
+
+.economy {
+  background-color: hsl(221, 31%, 8%);
+  color: whitesmoke;
+}
+
+.tech {
+  background-color: #ebe3d5;
+}
+
+.education {
+  background-color: #b0a695;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.articles article {
+  width: calc(33% - 16px);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .articles article {
+    width: calc(50% - 16px); /* Ocupa metade da largura em tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .articles article {
+    width: 100%; /* Ocupa toda a largura em celulares */
+  }
+}
+
+.articles article img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-family: Calibri, sans-serif;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+h2 {
+  font-family: Calibri, sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: Calibri, sans-serif;
+  font-size: x-large;
+}
+
+p {
+  font-size: larger;
+  margin-bottom: 24px;
+}
+
+time {
+  font-family: Calibri, sans-serif;
+  font-size: small;
+}
